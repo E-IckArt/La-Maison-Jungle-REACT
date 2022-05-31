@@ -2,7 +2,7 @@ import Banner from './Banner';
 import Cart from './Cart';
 import ShoppingList from './ShoppingList';
 
-function App() {
+const App = () => {
     return (
         <div>
             <Banner />
@@ -10,6 +10,6 @@ function App() {
             <ShoppingList />
         </div>
     );
-}
+};
 
 export default App;

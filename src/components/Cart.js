@@ -1,6 +1,6 @@
 import '../styles/Cart.css';
 
-function Cart() {
+const Cart = () => {
     const monsteraPrice = 8;
     const ivyPrice = 10;
     const flowerPrice = 15;
@@ -15,6 +15,6 @@ function Cart() {
             Total : {monsteraPrice + ivyPrice + flowerPrice}€
         </div>
     );
-}
+};
 
 export default Cart;
