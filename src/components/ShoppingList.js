@@ -39,7 +39,7 @@ function ShoppingList({ cart, updateCart }) {
                 {plantList.map(
                     ({ id, cover, name, water, light, price, category }) =>
                         !activeCategory || activeCategory === category ? (
-                            <div key={id}>
+                            <div className="lmj-plant-list-card" key={id}>
                                 <PlantItem
                                     cover={cover}
                                     name={name}
@@ -47,7 +47,10 @@ function ShoppingList({ cart, updateCart }) {
                                     light={light}
                                     price={price}
                                 />
-                                <button onClick={() => addToCart(name, price)}>
+                                <button
+                                    className="lmj-plant-list-addToCartBtn"
+                                    onClick={() => addToCart(name, price)}
+                                >
                                     Ajouter
                                 </button>
                             </div>
