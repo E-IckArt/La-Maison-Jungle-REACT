@@ -3,6 +3,7 @@ import Banner from './Banner';
 import Cart from './Cart';
 import ShoppingList from './ShoppingList';
 import Footer from './Footer';
+import '../styles/Layout.css';
 
 const App = () => {
     const [cart, updateCart] = useState([]);
@@ -10,8 +11,10 @@ const App = () => {
     return (
         <div>
             <Banner />
-            <Cart cart={cart} updateCart={updateCart} />
-            <ShoppingList />
+            <div className="lmj-layout-inner">
+                <Cart cart={cart} updateCart={updateCart} />
+                <ShoppingList />
+            </div>
             <Footer />
         </div>
     );
